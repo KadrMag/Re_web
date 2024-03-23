@@ -1,0 +1,16 @@
+{% extends "blog/base.html"%}
+{% block content%}
+<h1>Main </h1>
+<h2>Name {{name}}</h2>
+<h2>{{func1}}</h2>
+
+<h3>Now - {% now "d/m/y H:i:s"%}</h3>
+
+<ul>
+    {% for item in data %}
+       <li>{{item}}</li>
+    {%endfor%}
+   {# Test for #}
+</ul>
+
+{% endblock %}
